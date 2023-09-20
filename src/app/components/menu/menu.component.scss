@@ -1,3 +1,27 @@
 .ux-portfolio-menu {
   font-family: var(--poppins-font);
+
+  &__nav {
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-space-between);
+  }
+
+  &__brand {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__links {
+    ul {
+      display: var(--display-flex);
+      gap: 40px;
+      list-style: var(--list-style-none);
+
+      a {
+        text-decoration: none;
+        color: var(--faded-text);
+      }
+    }
+  }
 }

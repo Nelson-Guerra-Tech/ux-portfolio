@@ -28,8 +28,11 @@
 
   /* Colors */
   --dark: #212529;
+  --night: #0b0b0b;
+  --day: #f6f6f6;
   --white: #ffff;
   --off-white: #fcfcfb;
+  --faded-text: #838383;
   --light-text: #576574;
   --bg-light-gray: #ececec;
   --bg-gradient-color: #fc466b; /* fallback for old browsers */
@@ -108,6 +111,9 @@
   --font-size-22-px: 22px;
   --font-size-40-px: 40px;
   --font-size-60-px: 60px;
+
+  /* Lists */
+  --list-style-none: none;
 
   /* Letter Spacing */
   --letter-spacing-0-1-rem: 0.1rem;
@@ -227,7 +233,14 @@
   font-family: var(--manrope-apple-font);
 }
 
+html {
+  margin: var(--margin-0-px) var(--margin-auto);
+  max-width: var(--width-1200-px);
+}
+
 body {
-  background-color: var(--off-white);
-  scroll-behavior: smooth;
+  background-color: var(--night);
+  color: var(--day);
+  scroll-behavior: var(--scroll-behavior-smooth);
+  padding: var(--padding-20-px);
 }
