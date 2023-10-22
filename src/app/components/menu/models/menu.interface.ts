@@ -4,8 +4,8 @@ export interface Menu {
 }
 
 export interface Links {
-  home: string;
+  home?: string;
   about: string;
   blog: string;
-  contact: string;
+  contact?: string;
 }
