@@ -215,6 +215,7 @@
   /* Cursor */
   --user-select-none: none;
   --cursor-pointer: pointer;
+  --cursor-crosshair: crosshair;
 
   /* Transitions */
   --scroll-behavior-smooth: smooth;
@@ -236,11 +237,12 @@
 html {
   margin: var(--margin-0-px) var(--margin-auto);
   max-width: var(--width-1200-px);
+  cursor: var(--cursor-crosshair);
 }
 
 body {
-  background-color: var(--night);
-  color: var(--day);
+  background-color: var(--day);
+  color: var(--night);
   scroll-behavior: var(--scroll-behavior-smooth);
   padding: var(--padding-20-px);
 }

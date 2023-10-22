@@ -1,7 +1,7 @@
 import { Menu } from "../models/menu.interface";
 
 export const MenuData: Menu = {
-  brand: 'NG.',
+  brand: 'nelson<span class+"dot">.</span>design',
   links: {
     home: 'Home',
     about: 'About',
