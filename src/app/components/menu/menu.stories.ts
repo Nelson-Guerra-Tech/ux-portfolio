@@ -5,7 +5,7 @@ import { MenuComponent } from './menu.component';
 
 
 const meta: Meta<MenuComponent> = {
-  title: 'Menu',
+  title: 'Menu/Menu',
   component: MenuComponent,
   parameters: {
     layout: 'tablet',

@@ -1,5 +1,6 @@
 .ux-portfolio-menu {
   font-family: var(--poppins-font);
+  font-weight: var(--font-weight-500);
 
   &__nav {
     display: var(--display-flex);
@@ -8,20 +9,36 @@
   }
 
   &__brand {
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: var(--unit-18-px);
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
   }
 
   &__links {
     ul {
       display: var(--display-flex);
-      gap: 40px;
+      gap: var(--gap-40-px);
       list-style: var(--list-style-none);
 
       a {
-        text-decoration: none;
+        text-decoration: var(--text-decoration-none);
         color: var(--faded-text);
+        font-size: var(--unit-18-px);
+        transition: var(--transition-0-3-seconds);
+      }
+
+      a:hover {
+        color: var(--night);
       }
     }
+  }
+
+  &__separator {
+    display: var(--display-inline-block);
+    width: var(--unit-5-px);
+    height: var(--unit-5-px);
+    background-color: var(--orange-text); /* or any color you like */
+    border-radius: var(--border-radius-50-percent);
+    margin: var(--unit-8-px) var(--unit-2-px) var(--unit-0-px) var(--unit-2-px); /* to give some space around the circle */
   }
 }

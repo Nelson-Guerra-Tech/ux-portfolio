@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "Links",
-            "id": "interface-Links-9f9935467f41d09de7ccfa5e4a5e5f6ae5af9e9cdb214ff8ffdd18d8b174cafc4f8eacbd13574649804520c5ad70b7294e96d715d949efb898c4f4c68f3a25ba",
+            "id": "interface-Links-d404bb0dde2054d647e1846919603217148a8db70c8818a822ba4bc92d1146f970b24703fad0fd755a80342c6779b233f1016ef92e0f5e025e554e9fd6f5770c",
             "file": "src/app/components/menu/models/menu.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface Menu {\n  brand: string;\n  links: Links;\n}\n\nexport interface Links {\n  home: string;\n  about: string;\n  blog: string;\n  contact: string;\n}\n",
+            "sourceCode": "export interface Menu {\n  brand: string;\n  links: Links;\n}\n\nexport interface Links {\n  home?: string;\n  about: string;\n  blog: string;\n  contact?: string;\n}\n",
             "properties": [
                 {
                     "name": "about",
@@ -33,7 +33,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
-                    "optional": false,
+                    "optional": true,
                     "description": "",
                     "line": 10
                 },
@@ -42,7 +42,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
-                    "optional": false,
+                    "optional": true,
                     "description": "",
                     "line": 7
                 }
@@ -54,12 +54,12 @@
         },
         {
             "name": "Menu",
-            "id": "interface-Menu-9f9935467f41d09de7ccfa5e4a5e5f6ae5af9e9cdb214ff8ffdd18d8b174cafc4f8eacbd13574649804520c5ad70b7294e96d715d949efb898c4f4c68f3a25ba",
+            "id": "interface-Menu-d404bb0dde2054d647e1846919603217148a8db70c8818a822ba4bc92d1146f970b24703fad0fd755a80342c6779b233f1016ef92e0f5e025e554e9fd6f5770c",
             "file": "src/app/components/menu/models/menu.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface Menu {\n  brand: string;\n  links: Links;\n}\n\nexport interface Links {\n  home: string;\n  about: string;\n  blog: string;\n  contact: string;\n}\n",
+            "sourceCode": "export interface Menu {\n  brand: string;\n  links: Links;\n}\n\nexport interface Links {\n  home?: string;\n  about: string;\n  blog: string;\n  contact?: string;\n}\n",
             "properties": [
                 {
                     "name": "brand",
@@ -103,7 +103,38 @@
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [],
+    "directives": [
+        {
+            "name": "SeparatorDirective",
+            "id": "directive-SeparatorDirective-cd6d1a520a649dd0225a3bb3a9da3bcdea2c05d1cd207993b07041d028bf3a058da5cb5656809d381e4847d0704dfad5251faea863e3be7ddadc23f53d62ef05",
+            "file": "src/app/components/directives/separator/separator.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive } from '@angular/core';\n\n@Directive({\n  selector: '[appSeparator]',\n  standalone: true\n})\nexport class SeparatorDirective {\n\n  constructor() { }\n\n}\n",
+            "selector": "[appSeparator]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "extends": [],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            }
+        }
+    ],
     "components": [
         {
             "name": "AppComponent",
@@ -493,13 +524,13 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".ux-portfolio-menu {\n  font-family: var(--poppins-font);\n\n  &__nav {\n    display: var(--display-flex);\n    align-items: var(--align-items-center);\n    justify-content: var(--justify-content-space-between);\n  }\n\n  &__brand {\n    font-size: 20px;\n    letter-spacing: 2px;\n  }\n\n  &__links {\n    ul {\n      display: var(--display-flex);\n      gap: 40px;\n      list-style: var(--list-style-none);\n\n      a {\n        text-decoration: none;\n        color: var(--faded-text);\n      }\n    }\n  }\n}\n",
+                    "data": ".ux-portfolio-menu {\n  font-family: var(--poppins-font);\n\n  &__nav {\n    display: var(--display-flex);\n    align-items: var(--align-items-center);\n    justify-content: var(--justify-content-space-between);\n  }\n\n  &__brand {\n    font-size: 15px;\n    letter-spacing: 2px;\n  }\n\n  &__links {\n    ul {\n      display: var(--display-flex);\n      gap: 40px;\n      list-style: var(--list-style-none);\n\n      a {\n        text-decoration: none;\n        color: var(--faded-text);\n      }\n    }\n  }\n\n  .dot {\n    font-size: 20px;\n    border: 5px solid black;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n  }\n}\n",
                     "styleUrl": "./menu.component.scss"
                 }
             ],
             "stylesData": "",
             "extends": [],
-            "templateData": "<nav class=\"ux-portfolio-menu\">\n  <div class=\"ux-portfolio-menu__nav\">\n    <div class=\"ux-portfolio-menu__brand\">\n      <p [innerHTML]=\"content.brand\"></p>\n    </div>\n    <div class=\"ux-portfolio-menu__links\">\n      <ul>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.home\"></a>\n        </li>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.about\"></a>\n        </li>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.blog\"></a>\n        </li>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.contact\"></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+            "templateData": "<nav class=\"ux-portfolio-menu\">\n  <div class=\"ux-portfolio-menu__nav\">\n    <div class=\"ux-portfolio-menu__brand\">\n      <p [innerHTML]=\"content.brand\"></p>\n    </div>\n    <div class=\"ux-portfolio-menu__links\">\n      <ul>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.about\"></a>\n        </li>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.blog\"></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
         },
         {
             "name": "PageComponent",
@@ -734,7 +765,7 @@
                 "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n}"
             },
             {
-                "name": "LoggedOut",
+                "name": "Menu",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/menu/menu.stories.ts",
@@ -751,7 +782,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Menu",
-                "defaultValue": "{\n  brand: 'nelson<span class+\"dot\">.</span>design',\n  links: {\n    home: 'Home',\n    about: 'About',\n    blog: 'Blog',\n    contact: 'Contact'\n  }\n}"
+                "defaultValue": "{\n  brand: 'nelson<span class=\"dot\">.</span>design',\n  links: {\n    about: 'About',\n    blog: 'Blog',\n  }\n}"
             },
             {
                 "name": "meta",
@@ -791,7 +822,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<MenuComponent>",
-                "defaultValue": "{\n  title: 'Menu/TopMenu',\n  component: MenuComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [MenuComponent],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+                "defaultValue": "{\n  title: 'Menu/Menu',\n  component: MenuComponent,\n  parameters: {\n    layout: 'tablet',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [MenuComponent],\n      imports: [CommonModule],\n    }),\n  ],\n}"
             },
             {
                 "name": "preview",
@@ -1001,7 +1032,7 @@
             ],
             "src/app/components/menu/menu.stories.ts": [
                 {
-                    "name": "LoggedOut",
+                    "name": "Menu",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/menu/menu.stories.ts",
@@ -1018,7 +1049,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<MenuComponent>",
-                    "defaultValue": "{\n  title: 'Menu/TopMenu',\n  component: MenuComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [MenuComponent],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+                    "defaultValue": "{\n  title: 'Menu/Menu',\n  component: MenuComponent,\n  parameters: {\n    layout: 'tablet',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [MenuComponent],\n      imports: [CommonModule],\n    }),\n  ],\n}"
                 }
             ],
             "src/app/components/menu/data/menu.data.ts": [
@@ -1030,7 +1061,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Menu",
-                    "defaultValue": "{\n  brand: 'nelson<span class+\"dot\">.</span>design',\n  links: {\n    home: 'Home',\n    about: 'About',\n    blog: 'Blog',\n    contact: 'Contact'\n  }\n}"
+                    "defaultValue": "{\n  brand: 'nelson<span class=\"dot\">.</span>design',\n  links: {\n    about: 'About',\n    blog: 'Blog',\n  }\n}"
                 }
             ],
             ".storybook/preview.ts": [
@@ -1141,6 +1172,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/directives/separator/separator.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "SeparatorDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/footer/footer.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1182,7 +1222,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LoggedOut",
+                "name": "Menu",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

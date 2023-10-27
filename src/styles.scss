@@ -34,6 +34,7 @@
   --off-white: #fcfcfb;
   --faded-text: #838383;
   --light-text: #576574;
+  --orange-text: #dd6031;
   --bg-light-gray: #ececec;
   --bg-gradient-color: #fc466b; /* fallback for old browsers */
   --highlight-linear-gradient-pink-blue: linear-gradient(
@@ -83,12 +84,29 @@
   --padding-20-px: 20px;
   --padding-30-px: 30px;
   --padding-40-px: 40px;
+  --padding-50-px: 50px;
+  --padding-60-px: 60px;
+  --padding-70-px: 70px;
   --padding-80-px: 80px;
+  --padding-90-px: 90px;
   --padding-100-px: 100px;
 
-  /* Px */
+  /* PX */
   --unit-0-px: 0px;
+  --unit-2-px: 2px;
+  --unit-5-px: 5px;
+  --unit-8-px: 8px;
+  --unit-10-px: 10px;
+  --unit-15-px: 15px;
+  --unit-20-px: 20px;
   --unit-25-px: 25px;
+  --unit-30-px: 30px;
+  --unit-35-px: 35px;
+  --unit-40-px: 40px;
+  --unit-45-px: 45px;
+  --unit-50-px: 50px;
+  --unit-55-px: 55px;
+  --unit-60-px: 60px;
 
   /* Gap */
   --gap-1-rem: 1rem;
@@ -96,6 +114,7 @@
   --gap-1-px: 1px;
   --gap-10-px: 10px;
   --gap-16-px: 16px;
+  --gap-40-px: 40px;
 
   /* Font Size */
   --font-size-1-5-rem: 1.5rem;
@@ -109,7 +128,13 @@
   --font-size-18-px: 18px;
   --font-size-20-px: 20px;
   --font-size-22-px: 22px;
+  --font-size-25-px: 25px;
+  --font-size-30-px: 30px;
+  --font-size-35-px: 35px;
   --font-size-40-px: 40px;
+  --font-size-45-px: 45px;
+  --font-size-50-px: 50px;
+  --font-size-55-px: 55px;
   --font-size-60-px: 60px;
 
   /* Lists */
@@ -124,7 +149,9 @@
   /* Margin Top */
   --margin-top-2-rem: 2rem;
   --margin-top-8-rem: 8rem;
+  --margin-top-5-px: 5px;
   --margin-top-10-px: 10px;
+  --margin-top-15-px: 15px;
 
   /* Margin Right */
 
@@ -181,6 +208,7 @@
 
   /* Display */
   --display-block: block;
+  --display-inline-block: inline-block;
   --display-none: none;
   --overflow-hidden: hidden;
   --visibility-visible: visible;
@@ -199,15 +227,24 @@
   --text-fill-transparent: transparent;
   --bg-clip-text: text;
 
+  /* Transitions */
+  --transition-0-3-seconds: all 0.3s ease-in-out;
+
   /* Text Decoration */
   --text-decoration-none: none;
 
   /* Box Sizing */
   --border-sizing-border-box: border-box;
 
-  /* Border */
+  /* Border Radius */
   --border-radius-8-px: 8px;
   --border-radius-10-px: 10px;
+  --border-radius-20-px: 20px;
+  --border-radius-30-px: 30px;
+  --border-radius-40-px: 40px;
+  --border-radius-50-px: 50px;
+  --border-radius-60-px: 60px;
+  --border-radius-50-percent: 50%;
 
   /* Border Style */
   --border-style-none: none;
@@ -244,5 +281,5 @@ body {
   background-color: var(--day);
   color: var(--night);
   scroll-behavior: var(--scroll-behavior-smooth);
-  padding: var(--padding-20-px);
+  padding: var(--padding-20-px) var(--padding-40-px);
 }

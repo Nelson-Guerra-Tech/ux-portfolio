@@ -1,11 +1,14 @@
+export interface GenericLabel {
+  title: string;
+  subtitle: string;
+}
+
 export interface Menu {
-  brand: string;
+  label: GenericLabel;
   links: Links;
 }
 
 export interface Links {
-  home?: string;
   about: string;
   blog: string;
-  contact?: string;
 }

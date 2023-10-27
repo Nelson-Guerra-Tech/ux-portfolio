@@ -1,21 +1,17 @@
 <nav class="ux-portfolio-menu">
   <div class="ux-portfolio-menu__nav">
     <div class="ux-portfolio-menu__brand">
-      <p [innerHTML]="content.brand"></p>
+      <div [innerHTML]="content.label.title"></div>
+      <div class="ux-portfolio-menu__separator"></div>
+      <div [innerHTML]="content.label.subtitle"></div>
     </div>
     <div class="ux-portfolio-menu__links">
       <ul>
-        <li>
-          <a href="#" [innerHTML]="content.links.home"></a>
-        </li>
         <li>
           <a href="#" [innerHTML]="content.links.about"></a>
         </li>
         <li>
           <a href="#" [innerHTML]="content.links.blog"></a>
-        </li>
-        <li>
-          <a href="#" [innerHTML]="content.links.contact"></a>
         </li>
       </ul>
     </div>
