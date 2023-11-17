@@ -7,6 +7,27 @@
   --roboto-font: "Roboto", sans-serif;
   --manrope-apple-font: "Manrope", sans-serif;
 
+  /* Colors */
+  --dark: #212529;
+  --night: #0b0b0b;
+  --day: #f6f6f6;
+  --white: #ffff;
+  --off-white: #fcfcfb;
+  --faded-text: #838383;
+  --light-text: #576574;
+  --orange-text: #dd6031;
+
+  /* Backgrounds */
+  --bg-light-gray: #ececec;
+  --bg-gradient-color: #fc466b;
+
+  /* Gradients */
+  --highlight-linear-gradient-pink-blue: linear-gradient(
+    to left,
+    #fc466b,
+    #3f5efb
+  );
+
   /* Font Weight */
   --font-weight-100: 100;
   --font-weight-200: 200;
@@ -25,23 +46,6 @@
   --text-align-left: left;
   --text-align-right: right;
   --text-decoration-none: none;
-
-  /* Colors */
-  --dark: #212529;
-  --night: #0b0b0b;
-  --day: #f6f6f6;
-  --white: #ffff;
-  --off-white: #fcfcfb;
-  --faded-text: #838383;
-  --light-text: #576574;
-  --orange-text: #dd6031;
-  --bg-light-gray: #ececec;
-  --bg-gradient-color: #fc466b; /* fallback for old browsers */
-  --highlight-linear-gradient-pink-blue: linear-gradient(
-    to left,
-    #fc466b,
-    #3f5efb
-  );
 
   /* Width */
   --width-100-percent: 100%;
@@ -93,12 +97,30 @@
 
   /* PX */
   --unit-0-px: 0px;
+  --unit-1-px: 1px;
   --unit-2-px: 2px;
+  --unit-3-px: 3px;
+  --unit-4-px: 4px;
   --unit-5-px: 5px;
+  --unit-6-px: 6px;
+  --unit-7-px: 7px;
   --unit-8-px: 8px;
+  --unit-9-px: 9px;
   --unit-10-px: 10px;
+  --unit-11-px: 11px;
+  --unit-12-px: 12px;
+  --unit-13-px: 13px;
+  --unit-14-px: 14px;
   --unit-15-px: 15px;
+  --unit-16-px: 16px;
+  --unit-17-px: 17px;
+  --unit-18-px: 18px;
+  --unit-19-px: 19px;
   --unit-20-px: 20px;
+  --unit-21-px: 21px;
+  --unit-22-px: 22px;
+  --unit-23-px: 23px;
+  --unit-24-px: 24px;
   --unit-25-px: 25px;
   --unit-30-px: 30px;
   --unit-35-px: 35px;
@@ -107,6 +129,8 @@
   --unit-50-px: 50px;
   --unit-55-px: 55px;
   --unit-60-px: 60px;
+  --unit-70-px: 70px;
+  --unit-475-px: 475px;
 
   /* Gap */
   --gap-1-rem: 1rem;
@@ -246,6 +270,9 @@
   --border-radius-60-px: 60px;
   --border-radius-50-percent: 50%;
 
+  /* Percentage */
+  --unit-93-percent: 93%;
+
   /* Border Style */
   --border-style-none: none;
 
@@ -272,6 +299,7 @@
 }
 
 html {
+  font-family: var(--poppins-font);
   margin: var(--margin-0-px) var(--margin-auto);
   max-width: var(--width-1200-px);
   cursor: var(--cursor-crosshair);

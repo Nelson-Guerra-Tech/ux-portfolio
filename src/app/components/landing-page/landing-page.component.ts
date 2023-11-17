@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { LandingPage } from './models/landing-page.interfaces';
+import { LandingPageData } from './mocks/landing-page.mocks';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-
+  @Input() content: LandingPage = LandingPageData
 }
