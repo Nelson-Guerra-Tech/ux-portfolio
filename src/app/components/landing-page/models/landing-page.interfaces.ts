@@ -1,3 +1,5 @@
+import { Color } from "../../types/common.types";
+
 export interface GenericLabel {
   title: string;
   subtitle: string;
@@ -5,6 +7,6 @@ export interface GenericLabel {
 }
 
 export interface LandingPage {
-  label: GenericLabel
+  label: GenericLabel;
   descriptor: GenericLabel;
 }

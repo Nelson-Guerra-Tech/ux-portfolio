@@ -1,5 +1,6 @@
 .ux-portfolio-menu {
   font-family: var(--poppins-font);
+  padding: var(--unit-0-px) var(--unit-20-px);
 
   &__nav {
     display: var(--display-flex);
@@ -40,4 +41,7 @@
     border-radius: var(--border-radius-50-percent);
     margin: var(--unit-8-px) var(--unit-2-px) var(--unit-0-px) var(--unit-2-px); /* to give some space around the circle */
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
 }

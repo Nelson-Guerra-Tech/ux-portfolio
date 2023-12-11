@@ -1,0 +1,36 @@
+.card-color{
+  border-radius: var(--unit-30-px);
+}
+/* Background */
+.card-color-background-gold {
+  background-color: var(--gold);
+}
+.card-color-background-lightblue {
+  background-color: var(--light-blue);
+}
+.card-color-background-mint {
+  background-color: var(--mint);
+}
+.card-color-background-lavender {
+  background-color: var(--lavender);
+}
+.card-color-background-sky {
+  background-color: var(--sky);
+}
+.card-color-background-jet{
+  background-color: var(--jet);
+}
+.card-color-background-info {
+  background-color: var(--info);
+}
+.card-color-background-warning {
+  background-color: var(--warning);
+}
+
+/* Labels */
+.card-color-label-white {
+  color: var(--white);
+}
+.card-color-label-night {
+  color: var(--night);
+}

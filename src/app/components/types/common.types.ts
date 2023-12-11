@@ -1,0 +1,16 @@
+export type Color =
+  | "primary"
+  | "secondary"
+  | "success"
+  | "warning"
+  | "info"
+  | "white"
+  | "dark"
+  | "gold"
+  | "lightblue"
+  | "mint"
+  | "lavender"
+  | "sky"
+  | "night"
+  | "jet"
+  | "none";

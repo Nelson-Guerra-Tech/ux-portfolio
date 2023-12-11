@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Manrope:wght@200;300;400;500;600;800&display=swap");
+@import "./app//components//themes//base.styles.css";
 
 :root {
   /* Font Families */
@@ -11,11 +12,19 @@
   --dark: #212529;
   --night: #0b0b0b;
   --day: #f6f6f6;
+  --gold: #f5b700;
+  --warning: #dd6031;
+  --info: #2274a5;
   --white: #ffff;
+  --mint: #3ab795;
+  --lavender: #8d80ad;
+  --sky: #48beff;
+  --jet: #333333;
   --off-white: #fcfcfb;
   --faded-text: #838383;
   --light-text: #576574;
   --orange-text: #dd6031;
+  --light-blue: #337ca0;
 
   /* Backgrounds */
   --bg-light-gray: #ececec;
@@ -48,8 +57,10 @@
   --text-decoration-none: none;
 
   /* Width */
+  --width-100-vw: 100vw;
   --width-100-percent: 100%;
   --width-1024-px: 1024px;
+  --width-1080-px: 1080px;
   --width-1200-px: 1200px;
 
   /* Max Width */
@@ -96,10 +107,12 @@
   --padding-100-px: 100px;
 
   /* PX */
+  --unit-0: 0;
   --unit-0-px: 0px;
   --unit-1-px: 1px;
   --unit-2-px: 2px;
   --unit-3-px: 3px;
+  --unit-minus-4-px: -4px;
   --unit-4-px: 4px;
   --unit-5-px: 5px;
   --unit-6-px: 6px;
@@ -123,6 +136,8 @@
   --unit-24-px: 24px;
   --unit-25-px: 25px;
   --unit-30-px: 30px;
+  --unit-31-px: 31px;
+  --unit-32-px: 32px;
   --unit-35-px: 35px;
   --unit-40-px: 40px;
   --unit-45-px: 45px;
@@ -130,6 +145,13 @@
   --unit-55-px: 55px;
   --unit-60-px: 60px;
   --unit-70-px: 70px;
+  --unit-100-px: 100px;
+  --unit-200-px: 200px;
+  --unit-275-px: 275px;
+  --unit-300-px: 300px;
+  --unit-350-px: 350px;
+  --unit-360-px: 360px;
+  --unit-375-px: 375px;
   --unit-475-px: 475px;
 
   /* Gap */
@@ -163,6 +185,7 @@
 
   /* Lists */
   --list-style-none: none;
+  --none: none;
 
   /* Letter Spacing */
   --letter-spacing-0-1-rem: 0.1rem;
@@ -235,8 +258,10 @@
   --display-inline-block: inline-block;
   --display-none: none;
   --overflow-hidden: hidden;
+  --overflow-scroll: scroll;
   --visibility-visible: visible;
   --visibility-hidden: hidden;
+  --box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 
   /* Position */
   --position-absolute: absolute;
@@ -286,6 +311,7 @@
   --transition-ease-in-out: ease-in-out;
   --transition-ease-in: ease-in;
   --transition-ease-out: ease-out;
+  --transition-all: all 0.3s ease-in;
 
   /* Opacity */
   --opacity-0-8: 0.8;
@@ -301,13 +327,20 @@
 html {
   font-family: var(--poppins-font);
   margin: var(--margin-0-px) var(--margin-auto);
-  max-width: var(--width-1200-px);
-  cursor: var(--cursor-crosshair);
+  max-width: var(--width-1080-px);
 }
 
 body {
   background-color: var(--day);
   color: var(--night);
   scroll-behavior: var(--scroll-behavior-smooth);
-  padding: var(--padding-20-px) var(--padding-40-px);
+  padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
+    var(--padding-0-px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
+      var(--padding-0-px);
+  }
 }

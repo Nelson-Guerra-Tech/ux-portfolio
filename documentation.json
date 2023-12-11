@@ -2,6 +2,48 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "Cards",
+            "id": "interface-Cards-a8a47edce50474d3da59026c2dfd8f9ee94602dff514b9b499332d26b8c61e8e47a67063db6c0c7a1038e3e0dacb8c07a89d2ec3b93050211f28eda00d69ccd6",
+            "file": "src/app/components/project-card/models/project-card.component.interfaces.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { GenericLabel } from \"../../landing-page/models/landing-page.interfaces\";\nimport { Color } from \"../../types/common.types\";\n\nexport interface Image {\n  src: string;\n  alt: string;\n}\n\nexport interface Cards {\n  header: GenericLabel\n  image?: Image;\n  color: Color;\n}\n",
+            "properties": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Color",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "header",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "GenericLabel",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "image",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Image",
+                    "optional": true,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
             "name": "GenericLabel",
             "id": "interface-GenericLabel-3e8c31287eacfa8704f7746cc5528eb8aba2c128988b422933ef8b35e1e187e1f537e1bd60a77366ee91726a8c22a313c4f31681ad6373e91e80cf11e15ec596",
             "file": "src/app/components/menu/models/menu.interface.ts",
@@ -36,13 +78,22 @@
         },
         {
             "name": "GenericLabel",
-            "id": "interface-GenericLabel-1c0e88eece82b676c5e4cbab271426678c8b8a5d659ffc6b4fec71b017b27753966a7f3a5bb29047da8d9a4dea3b66770715f170bab772957b294f4b7a38cadb-1",
+            "id": "interface-GenericLabel-4266d18bb0ba0ed6fc8c7b4cfad821194126323b68f820595233622c4ce7172839697de044ce566bc4f82f64c3ecba8ce66dcefcc0545da92b4f39431c0aba20-1",
             "file": "src/app/components/landing-page/models/landing-page.interfaces.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface GenericLabel {\n  title: string;\n  subtitle: string;\n}\n\nexport interface LandingPage {\n  label: GenericLabel\n  descriptor: GenericLabel;\n}\n",
+            "sourceCode": "export interface GenericLabel {\n  title: string;\n  subtitle: string;\n  label?: string;\n}\n\nexport interface LandingPage {\n  label: GenericLabel\n  descriptor: GenericLabel;\n}\n",
             "properties": [
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
                 {
                     "name": "subtitle",
                     "deprecated": false,
@@ -71,13 +122,46 @@
             "duplicateName": "GenericLabel-1"
         },
         {
+            "name": "Image",
+            "id": "interface-Image-a8a47edce50474d3da59026c2dfd8f9ee94602dff514b9b499332d26b8c61e8e47a67063db6c0c7a1038e3e0dacb8c07a89d2ec3b93050211f28eda00d69ccd6",
+            "file": "src/app/components/project-card/models/project-card.component.interfaces.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { GenericLabel } from \"../../landing-page/models/landing-page.interfaces\";\nimport { Color } from \"../../types/common.types\";\n\nexport interface Image {\n  src: string;\n  alt: string;\n}\n\nexport interface Cards {\n  header: GenericLabel\n  image?: Image;\n  color: Color;\n}\n",
+            "properties": [
+                {
+                    "name": "alt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "src",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
             "name": "LandingPage",
-            "id": "interface-LandingPage-1c0e88eece82b676c5e4cbab271426678c8b8a5d659ffc6b4fec71b017b27753966a7f3a5bb29047da8d9a4dea3b66770715f170bab772957b294f4b7a38cadb",
+            "id": "interface-LandingPage-4266d18bb0ba0ed6fc8c7b4cfad821194126323b68f820595233622c4ce7172839697de044ce566bc4f82f64c3ecba8ce66dcefcc0545da92b4f39431c0aba20",
             "file": "src/app/components/landing-page/models/landing-page.interfaces.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface GenericLabel {\n  title: string;\n  subtitle: string;\n}\n\nexport interface LandingPage {\n  label: GenericLabel\n  descriptor: GenericLabel;\n}\n",
+            "sourceCode": "export interface GenericLabel {\n  title: string;\n  subtitle: string;\n  label?: string;\n}\n\nexport interface LandingPage {\n  label: GenericLabel\n  descriptor: GenericLabel;\n}\n",
             "properties": [
                 {
                     "name": "descriptor",
@@ -86,7 +170,7 @@
                     "type": "GenericLabel",
                     "optional": false,
                     "description": "",
-                    "line": 8
+                    "line": 9
                 },
                 {
                     "name": "label",
@@ -95,7 +179,7 @@
                     "type": "GenericLabel",
                     "optional": false,
                     "description": "",
-                    "line": 7
+                    "line": 8
                 }
             ],
             "indexSignatures": [],
@@ -174,7 +258,38 @@
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [],
+    "directives": [
+        {
+            "name": "CardColorDirective",
+            "id": "directive-CardColorDirective-ce11d5dc7316862500affe5de2f7d03c3fc8f19d45ebafcb9e267d98bebc309a53d87cf7d553b7480eb253238dc113b6c54968f80aa03b0b3cccd84057af0630",
+            "file": "src/app/components/directives/card-color/card-color.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive } from '@angular/core';\n\n@Directive({\n  selector: '[appCardColor]',\n  standalone: true\n})\nexport class CardColorDirective {\n\n  constructor() { }\n\n}\n",
+            "selector": "[appCardColor]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "extends": [],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            }
+        }
+    ],
     "components": [
         {
             "name": "AppComponent",
@@ -218,7 +333,7 @@
             ],
             "stylesData": "",
             "extends": [],
-            "templateData": "<body>\n  <app-menu></app-menu>\n  <app-landing-page></app-landing-page>\n  <app-footer></app-footer>\n</body>\n"
+            "templateData": "<body>\n  <app-menu></app-menu>\n  <app-landing-page></app-landing-page>\n  <app-project-card></app-project-card>\n  <app-footer></app-footer>\n</body>\n"
         },
         {
             "name": "FooterComponent",
@@ -310,13 +425,13 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".ux-portfolio-landing-page {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 475px;\n\n  &__subtitle-wrapper {\n    display: flex;\n    flex-direction: row;\n    align-items: flex-end;\n    margin-bottom: 40px;\n  }\n\n  &__title,\n  &__subtitle {\n    font-family: var(--poppins-font);\n    font-weight: 500;\n    font-size: 70px;\n    line-height: 93%;\n  }\n\n  &__period {\n    width: var(--unit-10-px);\n    height: var(--unit-10-px);\n    background-color: var(--orange-text);\n    border-radius: var(--border-radius-50-percent);\n    margin-bottom: var(--unit-7-px);\n  }\n\n  &__descriptor {\n  }\n}\n",
+                    "data": ".ux-portfolio-landing-page {\n  display: var(--display-flex);\n  flex-direction: var(--flex-direction-column);\n  justify-content: var(--justify-content-center);\n  height: var(--unit-475-px);\n\n  &__subtitle-wrapper {\n    display: var(--display-flex);\n    flex-direction: var(--flex-direction-row);\n    align-items: var(--align-items-end);\n    margin-bottom: var(--unit-40-px);\n  }\n\n  &__title,\n  &__subtitle {\n    font-family: var(--poppins-font);\n    font-weight: var(--font-weight-500);\n    font-size: var(--unit-70-px);\n    line-height: var(--unit-93-percent);\n  }\n\n  &__period {\n    width: var(--unit-10-px);\n    height: var(--unit-10-px);\n    background-color: var(--orange-text);\n    border-radius: var(--border-radius-50-percent);\n    margin-bottom: var(--unit-7-px);\n  }\n\n  &__descriptor-wrapper {\n    display: var(--display-flex);\n  }\n\n  &__descriptor-label {\n    margin-left: var(--unit-5-px);\n    color: var(--orange-text);\n  }\n}\n",
                     "styleUrl": "./landing-page.component.scss"
                 }
             ],
             "stylesData": "",
             "extends": [],
-            "templateData": "<div class=\"ux-portfolio-landing-page\">\n  <div\n    class=\"ux-portfolio-landing-page__title\"\n    [innerHTML]=\"content.label.title\"\n  ></div>\n\n  <div class=\"ux-portfolio-landing-page__subtitle-wrapper\">\n    <div\n      class=\"ux-portfolio-landing-page__subtitle\"\n      [innerHTML]=\"content.label.subtitle\"\n    ></div>\n    <div class=\"ux-portfolio-landing-page__period\"></div>\n  </div>\n\n  <div\n    class=\"ux-portfolio-landing-page__descriptor\"\n    [innerHTML]=\"content.descriptor.title\"\n  ></div>\n  <div\n    class=\"ux-portfolio-landing-page__descriptor\"\n    [innerHTML]=\"content.descriptor.subtitle\"\n  ></div>\n</div>\n"
+            "templateData": "<div class=\"ux-portfolio-landing-page\">\n  <div\n    class=\"ux-portfolio-landing-page__title\"\n    [innerHTML]=\"content.label.title\"\n  ></div>\n\n  <div class=\"ux-portfolio-landing-page__subtitle-wrapper\">\n    <div\n      class=\"ux-portfolio-landing-page__subtitle\"\n      [innerHTML]=\"content.label.subtitle\"\n    ></div>\n    <div class=\"ux-portfolio-landing-page__period\"></div>\n  </div>\n\n  <div\n    class=\"ux-portfolio-landing-page__descriptor\"\n    [innerHTML]=\"content.descriptor.title\"\n  ></div>\n  <div class=\"ux-portfolio-landing-page__descriptor-wrapper\">\n    <div\n      class=\"ux-portfolio-landing-page__descriptor\"\n      [innerHTML]=\"content.descriptor.subtitle\"\n    ></div>\n    <div\n      class=\"ux-portfolio-landing-page__descriptor-label\"\n      [innerHTML]=\"content.descriptor.label\"\n    ></div>\n  </div>\n</div>\n"
         },
         {
             "name": "MenuComponent",
@@ -371,18 +486,72 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<nav class=\"ux-portfolio-menu\">\n  <div class=\"ux-portfolio-menu__nav\">\n    <div class=\"ux-portfolio-menu__brand\">\n      <div [innerHTML]=\"content.label.title\"></div>\n      <div class=\"ux-portfolio-menu__separator\"></div>\n      <div [innerHTML]=\"content.label.subtitle\"></div>\n    </div>\n    <div class=\"ux-portfolio-menu__links\">\n      <ul>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.about\"></a>\n        </li>\n        <li>\n          <a href=\"#\" [innerHTML]=\"content.links.blog\"></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+        },
+        {
+            "name": "ProjectCardComponent",
+            "id": "component-ProjectCardComponent-62ab6d47d8218507c585ac56ee567cbd32e3ee47f0855b178ff4e70bdf4a6894cb2e9f6c9f2ef573a4b1c8cb52896a6563a489689d3ec15a2c49dd5e23aa7829",
+            "file": "src/app/components/project-card/project-card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-project-card",
+            "styleUrls": [
+                "./project-card.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./project-card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "content",
+                    "defaultValue": "ProjectCardsMocks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "Cards[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from \"@angular/core\";\nimport { Cards } from \"./models/project-card.component.interfaces\";\nimport { ProjectCardsMocks } from \"./mocks/project-card.component.mocks\";\n\n@Component({\n  selector: \"app-project-card\",\n  templateUrl: \"./project-card.component.html\",\n  styleUrls: [\"./project-card.component.scss\"],\n  standalone: true,\n})\nexport class ProjectCardComponent {\n  @Input() content: Cards[] = ProjectCardsMocks;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".project-card {\n  display: flex;\n  gap: 10px;\n  overflow: hidden;\n\n  &__container {\n    display: flex;\n    flex-direction: column;\n    width: 350px;\n    height: 400px;\n    // background: lightblue;\n    padding: 20px 30px;\n  }\n  .gold {\n    background-color: var(--gold);\n  }\n\n  &__title {\n    font-size: 25px;\n  }\n\n  &__subtitle {\n    font-size: 14px;\n  }\n}\n",
+                    "styleUrl": "./project-card.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"project-card\">\n  <div *ngFor=\"let card of content\" class=\"project-card__container\">\n    <span class=\"project-card__title\" [innerHTML]=\"card.header.title\"></span>\n    <span\n      class=\"project-card__subtitle\"\n      [innerHTML]=\"card.header.subtitle\"\n    ></span>\n  </div>\n</div>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-c525b7731542a57c5958dfcf4c3ec5f3592deb6d5ab62d4fdb1cdbe553a310617bf240f9f5413adef96258c0f20fbff6f53da70acffaa3cfb09292b4c107b401",
+            "id": "module-AppModule-3f2be3ee7758ae6920fd955e391fc0dbfcd8fc3c86d9a30a217960d87c8f411fb81c47bcb507bca760383523ee9ca083b200b0932956d92697e0de4f3119ae55",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { MenuComponent } from './components/menu/menu.component';\nimport { FooterComponent } from './components/footer/footer.component';\nimport { LandingPageComponent } from './components/landing-page/landing-page.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    MenuComponent,\n    FooterComponent,\n    LandingPageComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from \"@angular/core\";\nimport { BrowserModule } from \"@angular/platform-browser\";\n\nimport { AppRoutingModule } from \"./app-routing.module\";\nimport { AppComponent } from \"./app.component\";\nimport { FontAwesomeModule } from \"@fortawesome/angular-fontawesome\";\nimport { MenuComponent } from \"./components/menu/menu.component\";\nimport { FooterComponent } from \"./components/footer/footer.component\";\nimport { LandingPageComponent } from \"./components/landing-page/landing-page.component\";\nimport { ProjectCardComponent } from \"./components/project-card/project-card.component\";\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    MenuComponent,\n    FooterComponent,\n    LandingPageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule,\n    ProjectCardComponent,\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -410,6 +579,9 @@
                     "elements": [
                         {
                             "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "ProjectCardComponent"
                         }
                     ]
                 },
@@ -488,7 +660,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "LandingPage",
-                "defaultValue": "{\n  label: {\n    title: \"Software Developer\",\n    subtitle: \"UX Designer\"\n  },\n  descriptor: {\n    title: 'Designing the Future, One Line of Code at a Time',\n    subtitle: 'Software Engineer at Delta Air Lines'\n  }\n}"
+                "defaultValue": "{\n  label: {\n    title: \"Software Developer\",\n    subtitle: \"UX Designer\"\n  },\n  descriptor: {\n    title: 'Designing the Future, One Line of Code at a Time',\n    subtitle: 'Software Engineer at ',\n    label: 'Delta Air Lines'\n  }\n}"
             },
             {
                 "name": "Menu",
@@ -539,10 +711,31 @@
                 "deprecationMessage": "",
                 "type": "Preview",
                 "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "ProjectCardsMocks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/project-card/mocks/project-card.component.mocks.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Cards[]",
+                "defaultValue": "[\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"Web Design\",\n    },\n    color: \"gold\",\n  },\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"Mobile Design\",\n    },\n    color: \"info\",\n  },\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"eCommerce\",\n    },\n    color: \"gold\",\n  },\n]"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Color",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"primary\" | \"secondary\" | \"success\" | \"warn\" | \"info\" | \"white\" | \"dark\" | \"gold\" | \"none\"",
+                "file": "src/app/components/types/common.types.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 192
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -599,7 +792,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "LandingPage",
-                    "defaultValue": "{\n  label: {\n    title: \"Software Developer\",\n    subtitle: \"UX Designer\"\n  },\n  descriptor: {\n    title: 'Designing the Future, One Line of Code at a Time',\n    subtitle: 'Software Engineer at Delta Air Lines'\n  }\n}"
+                    "defaultValue": "{\n  label: {\n    title: \"Software Developer\",\n    subtitle: \"UX Designer\"\n  },\n  descriptor: {\n    title: 'Designing the Future, One Line of Code at a Time',\n    subtitle: 'Software Engineer at ',\n    label: 'Delta Air Lines'\n  }\n}"
                 }
             ],
             "src/app/components/menu/menu.stories.ts": [
@@ -647,11 +840,36 @@
                     "type": "Preview",
                     "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
                 }
+            ],
+            "src/app/components/project-card/mocks/project-card.component.mocks.ts": [
+                {
+                    "name": "ProjectCardsMocks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/project-card/mocks/project-card.component.mocks.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Cards[]",
+                    "defaultValue": "[\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"Web Design\",\n    },\n    color: \"gold\",\n  },\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"Mobile Design\",\n    },\n    color: \"info\",\n  },\n  {\n    header: {\n      title: \"The Nue Co\",\n      subtitle: \"eCommerce\",\n    },\n    color: \"gold\",\n  },\n]"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "src/app/components/types/common.types.ts": [
+                {
+                    "name": "Color",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"primary\" | \"secondary\" | \"success\" | \"warn\" | \"info\" | \"white\" | \"dark\" | \"gold\" | \"none\"",
+                    "file": "src/app/components/types/common.types.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 192
+                }
+            ],
             "src/app/components/menu/menu.stories.ts": [
                 {
                     "name": "Story",
@@ -718,6 +936,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/directives/card-color/card-color.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "CardColorDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/footer/footer.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -771,7 +998,7 @@
                 "linktype": "interface",
                 "name": "GenericLabel",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -847,6 +1074,43 @@
                 "name": "Menu",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/project-card/mocks/project-card.component.mocks.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ProjectCardsMocks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/project-card/models/project-card.component.interfaces.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Cards",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/project-card/models/project-card.component.interfaces.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/project-card/project-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ProjectCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             }
         ]

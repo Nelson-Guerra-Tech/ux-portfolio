@@ -1,0 +1,15 @@
+<div class="project-card">
+  <div
+    *ngFor="let card of content"
+    class="project-card__box"
+    cardColor
+    [cardColorBackground]="card.color"
+    [cardColorLabel]="card.label"
+  >
+    <span class="project-card__title" [innerHTML]="card.header.title"></span>
+    <span
+      class="project-card__subtitle"
+      [innerHTML]="card.header.subtitle"
+    ></span>
+  </div>
+</div>
