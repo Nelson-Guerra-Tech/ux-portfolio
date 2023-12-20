@@ -1,6 +1,6 @@
 .project-card {
   display: var(--display-flex);
-  gap: var(--unit-12-px);
+  justify-content: var(--justify-content-space-between);
   padding-bottom: var(--unit-20-px);
   scroll-behavior: var(--scroll-behavior-smooth);
   -ms-overflow-style: var(--none); /* IE and Edge */
@@ -8,29 +8,41 @@
   padding: var(--padding-50-px) var(--padding-0-px) var(--padding-20-px)
     var(--padding-0-px);
   overflow-x: var(--overflow-scroll);
+  overflow: var(--overflow-visible);
   margin-bottom: var(--unit-100-px);
+  font-family: var(--manrope-apple-font);
 
   &__box {
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     min-width: var(--unit-350-px);
-    height: var(--unit-200-px);
-    padding: var(--unit-20-px) var(--unit-30-px);
+    height: var(--unit-350-px);
+    padding: var(--unit-35-px) var(--unit-35-px);
     box-shadow: var(--box-shadow);
     transition: var(--transition-all);
     cursor: var(--cursor-pointer);
+    overflow: var(--overflow-hidden);
   }
 
   &__box:hover {
-    transform: translateY(--unit-minus-4-px);
+    box-shadow: var(--box-shadow-medium);
+    transform: translateY(-8px);
+    background-color: var(--dark-charcoal);
   }
 
   &__title {
+    z-index: var(--unit-2);
     font-size: var(--unit-25-px);
+    font-weight: var(--font-weight-500);
+    margin-top: var(--unit-5-px);
   }
 
   &__subtitle {
-    font-size: var(--unit-14-px);
+    z-index: var(--unit-2);
+    opacity: var(--opacity-0-8);
+    text-transform: var(--text-transformation-uppercase);
+    font-size: var(--unit-12-px);
+    width: var(--fit-content);
   }
 }
 .project-card::-webkit-scrollbar {
@@ -39,7 +51,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .project-card {
-    padding: var(--padding-20-px) var(--padding-20-px);
+    overflow-x: var(--overflow-scroll);
+    padding: var(--padding-20-px) var(--padding-10-px);
+    gap: var(--unit-10-px);
     &__box {
       min-width: var(--unit-275-px);
       height: var(--unit-200-px);
@@ -49,7 +63,9 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .project-card {
-    padding: var(--padding-20-px) var(--padding-20-px);
+    overflow-x: var(--overflow-scroll);
+    padding: var(--padding-20-px) var(--padding-10-px);
+    gap: var(--unit-10-px);
     &__box {
       height: var(--unit-200-px);
     }

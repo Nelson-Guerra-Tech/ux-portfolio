@@ -4,35 +4,46 @@
   justify-content: var(--justify-content-end);
   height: var(--unit-375-px);
   margin-bottom: var(--unit-30-px);
+  user-select: var(--text-decoration-none);
+  cursor: var(--cursor-default);
+
   &__subtitle-wrapper {
     display: var(--display-flex);
     flex-direction: var(--flex-direction-row);
     align-items: var(--align-items-end);
+    width: var(--width-100-percent);
     margin-bottom: var(--unit-40-px);
+  }
+
+  &__title-wrapper {
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
   }
 
   &__title,
   &__subtitle {
-    font-family: var(--poppins-font);
-    font-weight: var(--font-weight-500);
-    font-size: var(--unit-70-px);
+    font-family: var(--manrope-apple-font);
+    font-weight: var(--font-weight-600);
+    font-size: var(--unit-65-px);
     line-height: var(--unit-93-percent);
   }
 
   &__period {
     width: var(--unit-10-px);
     height: var(--unit-10-px);
-    background-color: var(--orange-text);
+    background-color: var(--ocean);
     border-radius: var(--border-radius-50-percent);
-    margin-bottom: var(--unit-7-px);
+    margin-bottom: var(--unit-5-px);
   }
 
   &__descriptor-title {
-    font-size: 20px;
+    font-size: var(--unit-20-px);
+    font-weight: var(--font-weight-400);
   }
 
   &__descriptor-wrapper {
     display: var(--display-flex);
+    font-weight: var(--font-weight-400);
   }
 
   &__descriptor {
@@ -40,15 +51,16 @@
   }
 
   &__descriptor-label {
+    font-weight: var(--font-weight-500);
     margin-left: var(--unit-5-px);
-    color: var(--orange-text);
+    color: var(--danger);
     font-size: var(--unit-20-px);
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .ux-portfolio-landing-page {
-    padding: var(--padding-20-px) var(--padding-20-px);
+    padding: var(--padding-20-px) var(--padding-10-px);
     margin-bottom: var(--unit-10-px);
     height: var(--unit-275-px);
     &__subtitle-wrapper {
@@ -61,7 +73,7 @@
     &__subtitle {
       font-family: var(--poppins-font);
       font-weight: var(--font-weight-500);
-      font-size: var(--unit-31-px);
+      font-size: var(--unit-40-px);
       line-height: var(--unit-93-percent);
     }
     &__period {
@@ -84,7 +96,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ux-portfolio-landing-page {
-    padding: var(--padding-20-px) var(--padding-20-px);
+    padding: var(--padding-20-px) var(--padding-10-px);
     &__subtitle-wrapper {
       display: var(--display-flex);
       flex-direction: var(--flex-direction-row);

@@ -1,5 +1,5 @@
 .card-color{
-  border-radius: var(--unit-30-px);
+  border-radius: var(--unit-20-px);
 }
 /* Background */
 .card-color-background-gold {
@@ -17,14 +17,35 @@
 .card-color-background-sky {
   background-color: var(--sky);
 }
+.card-color-background-teal {
+  background-color: var(--teal);
+}
 .card-color-background-jet{
   background-color: var(--jet);
+}
+.card-color-background-charcoal {
+  background-color: var(--charcoal);
+}
+.card-color-background-blue {
+  background-color: var(--blue);
+}
+.card-color-background-ocean {
+  background-color: var(--ocean);
+}
+.card-color-background-ut-orange {
+  background-color: var(--ut-orange);
 }
 .card-color-background-info {
   background-color: var(--info);
 }
 .card-color-background-warning {
   background-color: var(--warning);
+}
+.card-color-background-yellow {
+  background-color: var(--yellow);
+}
+.card-color-background-sky-gradient {
+  background: var(--sky-gradient);
 }
 
 /* Labels */

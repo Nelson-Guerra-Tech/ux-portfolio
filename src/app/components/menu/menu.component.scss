@@ -1,6 +1,6 @@
 .ux-portfolio-menu {
-  font-family: var(--poppins-font);
-  padding: var(--unit-0-px) var(--unit-20-px);
+  font-family: var(--manrope-apple-font);
+  padding: var(--unit-0-px) var(--unit-5-px) var(--unit-0-px) var(--unit-0-px);
 
   &__nav {
     display: var(--display-flex);
@@ -9,9 +9,12 @@
   }
 
   &__brand {
+    font-weight: var(--font-weight-500);
     font-size: var(--unit-18-px);
     display: var(--display-flex);
     align-items: var(--align-items-center);
+    user-select: var(--user-select-none);
+    cursor: var(--cursor-pointer);
   }
 
   &__links {
@@ -37,11 +40,18 @@
     display: var(--display-inline-block);
     width: var(--unit-5-px);
     height: var(--unit-5-px);
-    background-color: var(--orange-text); /* or any color you like */
+    background-color: var(--ocean); /* or any color you like */
     border-radius: var(--border-radius-50-percent);
     margin: var(--unit-8-px) var(--unit-2-px) var(--unit-0-px) var(--unit-2-px); /* to give some space around the circle */
   }
-}
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    padding: var(--unit-0-px) var(--unit-10-px) var(--unit-0-px)
+      var(--unit-10-px);
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: var(--unit-0-px) var(--unit-10-px) var(--unit-0-px)
+      var(--unit-10-px);
+  }
 }

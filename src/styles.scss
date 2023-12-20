@@ -12,14 +12,28 @@
   --dark: #212529;
   --night: #0b0b0b;
   --day: #f6f6f6;
-  --gold: #f5b700;
+  --danger: #ff220c;
+  --gold: #fdbb11;
   --warning: #dd6031;
+  --ut-orange: #ff8811;
   --info: #2274a5;
   --white: #ffff;
   --mint: #3ab795;
   --lavender: #8d80ad;
-  --sky: #48beff;
+  --sky: #90f1ef;
+  --blue: #01baef;
+  --ocean: #196bde;
+  --teal: #1dd3b0;
+  --yellow: #ffff3f;
+  --green: #ccff33;
   --jet: #333333;
+  --charcoal: #050517;
+  --dark-charcoal: #14080e;
+  --sky-gradient: linear-gradient(
+    343deg,
+    rgba(69, 111, 232, 1) 20%,
+    rgba(25, 176, 236, 1) 100%
+  );
   --off-white: #fcfcfb;
   --faded-text: #838383;
   --light-text: #576574;
@@ -54,7 +68,6 @@
   --text-decoration-none: none;
   --text-align-left: left;
   --text-align-right: right;
-  --text-decoration-none: none;
 
   /* Width */
   --width-100-vw: 100vw;
@@ -144,6 +157,7 @@
   --unit-50-px: 50px;
   --unit-55-px: 55px;
   --unit-60-px: 60px;
+  --unit-65-px: 65px;
   --unit-70-px: 70px;
   --unit-100-px: 100px;
   --unit-200-px: 200px;
@@ -153,6 +167,9 @@
   --unit-360-px: 360px;
   --unit-375-px: 375px;
   --unit-475-px: 475px;
+
+  /* Single Digits */
+  --unit-2: 2;
 
   /* Gap */
   --gap-1-rem: 1rem;
@@ -192,6 +209,7 @@
 
   /* Object Fit */
   --object-fit-cover: cover;
+  --fit-content: fit-content;
 
   /* Margin Top */
   --margin-top-2-rem: 2rem;
@@ -258,10 +276,14 @@
   --display-inline-block: inline-block;
   --display-none: none;
   --overflow-hidden: hidden;
+  --overflow-visible: visible;
   --overflow-scroll: scroll;
   --visibility-visible: visible;
   --visibility-hidden: hidden;
-  --box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  --box-shadow-medium: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   /* Position */
   --position-absolute: absolute;
@@ -284,6 +306,7 @@
 
   /* Box Sizing */
   --border-sizing-border-box: border-box;
+  --solid: solid;
 
   /* Border Radius */
   --border-radius-8-px: 8px;
@@ -305,13 +328,14 @@
   --user-select-none: none;
   --cursor-pointer: pointer;
   --cursor-crosshair: crosshair;
+  --cursor-default: default;
 
   /* Transitions */
   --scroll-behavior-smooth: smooth;
   --transition-ease-in-out: ease-in-out;
   --transition-ease-in: ease-in;
   --transition-ease-out: ease-out;
-  --transition-all: all 0.3s ease-in;
+  --transition-all: all 0.3s ease-in-out;
 
   /* Opacity */
   --opacity-0-8: 0.8;
@@ -331,8 +355,8 @@ html {
 }
 
 body {
-  background-color: var(--day);
-  color: var(--night);
+  background-color: var(--white);
+  color: var(--charcoal);
   scroll-behavior: var(--scroll-behavior-smooth);
   padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
     var(--padding-0-px);

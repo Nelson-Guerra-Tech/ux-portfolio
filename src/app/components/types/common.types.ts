@@ -13,4 +13,11 @@ export type Color =
   | "sky"
   | "night"
   | "jet"
+  | "sky-gradient"
+  | "teal"
+  | "charcoal"
+  | "blue"
+  | "ocean"
+  | "ut-orange"
+  | "yellow"
   | "none";

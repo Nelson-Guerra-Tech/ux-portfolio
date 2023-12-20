@@ -1,15 +1,20 @@
 <div class="ux-portfolio-landing-page">
-  <div
-    class="ux-portfolio-landing-page__title"
-    [innerHTML]="content.label.title"
-  ></div>
+  <div class="ux-portfolio-landing-page__title-wrapper">
+    <div
+      class="ux-portfolio-landing-page__title"
+      [innerHTML]="content.label.title"
+    ></div>
+    <div class="ux-portfolio-landing-page__period"></div>
+  </div>
 
-  <div class="ux-portfolio-landing-page__subtitle-wrapper">
+  <div
+    *ngIf="content.label.subtitle"
+    class="ux-portfolio-landing-page__subtitle-wrapper"
+  >
     <div
       class="ux-portfolio-landing-page__subtitle"
       [innerHTML]="content.label.subtitle"
     ></div>
-    <div class="ux-portfolio-landing-page__period"></div>
   </div>
 
   <div

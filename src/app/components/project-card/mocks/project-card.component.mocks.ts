@@ -6,23 +6,23 @@ export const ProjectCardsMocks: Cards[] = [
       title: "The Nue Co",
       subtitle: "Web Design",
     },
-    color: "gold",
-    label: "dark",
+    color: "ocean",
+    label: "white",
   },
   {
     header: {
       title: "Americana",
       subtitle: "Mobile Design",
     },
-    color: "mint",
-    label: "dark",
+    color: "ocean",
+    label: "white",
   },
   {
     header: {
       title: "Petal",
-      subtitle: "eCommerce",
+      subtitle: "app design",
     },
-    color: "sky",
-    label: "dark",
+    color: "ocean",
+    label: "white",
   },
 ];

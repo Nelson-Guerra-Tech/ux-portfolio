@@ -3,10 +3,10 @@ import { Menu } from "../models/menu.interface";
 export const MenuData: Menu = {
   label: {
     title: "nelson",
-    subtitle: "design"
+    subtitle: "develop",
   },
   links: {
-    about: 'About',
-    blog: 'Blog',
-  }
-}
+    about: "About",
+    blog: "Blog",
+  },
+};

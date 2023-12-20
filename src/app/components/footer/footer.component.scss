@@ -1,9 +1,48 @@
 .ux-portfolio-footer {
-  background-color: var(--night);
-  color: var(--white);
-  height: var(--unit-300-px);
-  position: var(--position-absolute);
-  left: var(--unit-0);
-  width: var(--width-100-vw);
-  padding: var(--unit-0-px) var(--unit-360-px);
+  display: var(--display-flex);
+  justify-content: var(--justify-content-space-between);
+  gap: var(--unit-30-px);
+  align-items: var(--align-items-center);
+  border-top: var(--unit-1-px) var(--solid) var(--faded-text);
+  color: var(--night);
+  padding: var(--unit-60-px) var(--unit-30-px);
+
+  &__brand-wrapper {
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
+    font-weight: var(--font-weight-600);
+  }
+
+  &__links {
+    display: var(--display-flex);
+    gap: var(--unit-20-px);
+
+    a {
+      text-decoration: var(--text-decoration-none);
+      color: var(--charcoal);
+      font-weight: var(--font-weight-600);
+      color: var(--charcoal);
+    }
+  }
+
+  &__label {
+    color: var(--white);
+    font-size: var(--unit-20-px);
+  }
+
+  &__social-icons {
+    display: var(--display-flex);
+    gap: var(--unit-20-px);
+    font-size: var(--unit-25-px);
+
+    a:-webkit-any-link {
+      color: var(--charcoal);
+      cursor: var(--cursor-pointer);
+    }
+  }
+
+  &__rights {
+    user-select: var(--text-decoration-none);
+    color: var(--faded-text);
+  }
 }
