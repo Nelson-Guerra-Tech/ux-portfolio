@@ -1,0 +1,25 @@
+.ux-portfolio-contact {
+  display: var(--display-flex);
+  justify-content: var(--justify-content-start);
+  align-items: var(--align-items-center);
+  flex-direction: var(--flex-direction-column);
+  height: var(--unit-300-px);
+  margin-bottom: var(--unit-30-px);
+
+  &__description {
+    font-weight: var(--font-weight-600);
+    max-width: var(--unit-700-px);
+    font-size: var(--unit-45-px);
+    line-height: var(--unit-45-px);
+    user-select: var(--none);
+  }
+
+  &__link {
+    font-weight: var(--font-weight-600);
+    font-size: var(--unit-45-px);
+
+    a {
+      color: var(--mint);
+    }
+  }
+}

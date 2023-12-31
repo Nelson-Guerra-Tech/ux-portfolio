@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { Cards } from "./models/project-card.component.interfaces";
-import { ProjectCardsMocks } from "./mocks/project-card.component.mocks";
+import { ProjectCardsMocks } from "./data/project-card.component.mocks";
 import { CommonModule } from "@angular/common";
 import { CardColorDirective } from "../directives/card-color/card-color.directive";
 

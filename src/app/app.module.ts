@@ -8,6 +8,8 @@ import { MenuComponent } from "./components/menu/menu.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LandingPageComponent } from "./components/landing-page/landing-page.component";
 import { ProjectCardComponent } from "./components/project-card/project-card.component";
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { ProjectCardComponent } from "./components/project-card/project-card.com
     MenuComponent,
     FooterComponent,
     LandingPageComponent,
+    ContactComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

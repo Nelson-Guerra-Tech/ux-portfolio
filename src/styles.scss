@@ -10,15 +10,17 @@
 
   /* Colors */
   --dark: #212529;
+  --darker: 151515;
   --night: #0b0b0b;
   --day: #f6f6f6;
   --danger: #ff220c;
   --gold: #fdbb11;
   --warning: #dd6031;
   --ut-orange: #ff8811;
+  --highlight: #fa7921;
   --info: #2274a5;
   --white: #ffff;
-  --mint: #3ab795;
+  --mint: #06a77d;
   --lavender: #8d80ad;
   --sky: #90f1ef;
   --blue: #01baef;
@@ -167,6 +169,7 @@
   --unit-360-px: 360px;
   --unit-375-px: 375px;
   --unit-475-px: 475px;
+  --unit-700-px: 700px;
 
   /* Single Digits */
   --unit-2: 2;
@@ -292,6 +295,7 @@
   --position-inherit: inherit;
 
   /* Text Transformation */
+  --text-decoration-underline: underline;
   --text-transformation-uppercase: uppercase;
   --text-transformation-lowercase: lowercase;
   --text-transformation-capitalize: capitalize;

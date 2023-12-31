@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { FooterDate } from "./mocks/footer.mocks";
+import { FooterDate } from "./data/footer.mocks";
 import { Footer } from "./models/footer.interfaces";
 import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";

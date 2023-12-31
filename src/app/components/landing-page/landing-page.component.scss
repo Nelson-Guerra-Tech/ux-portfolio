@@ -34,6 +34,7 @@
     background-color: var(--ocean);
     border-radius: var(--border-radius-50-percent);
     margin-bottom: var(--unit-5-px);
+    margin-left: var(--unit-3-px);
   }
 
   &__descriptor-title {
@@ -53,7 +54,8 @@
   &__descriptor-label {
     font-weight: var(--font-weight-500);
     margin-left: var(--unit-5-px);
-    color: var(--danger);
+    color: var(--highlight);
+    text-decoration: var(--text-decoration-underline);
     font-size: var(--unit-20-px);
   }
 }
