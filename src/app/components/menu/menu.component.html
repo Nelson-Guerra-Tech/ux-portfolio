@@ -8,10 +8,11 @@
     <div class="ux-portfolio-menu__links">
       <ul>
         <li>
-          <a href="#" [innerHTML]="content.links.about"></a>
-        </li>
-        <li>
-          <a href="#" [innerHTML]="content.links.blog"></a>
+          <a
+            href="#about"
+            (click)="navigateToAbout()"
+            [innerHTML]="content.links.about"
+          ></a>
         </li>
       </ul>
     </div>

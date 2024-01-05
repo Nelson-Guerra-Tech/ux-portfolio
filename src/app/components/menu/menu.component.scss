@@ -40,7 +40,7 @@
     display: var(--display-inline-block);
     width: var(--unit-5-px);
     height: var(--unit-5-px);
-    background-color: var(--ocean); /* or any color you like */
+    background-color: var(--darker); /* or any color you like */
     border-radius: var(--border-radius-50-percent);
     margin: var(--unit-8-px) var(--unit-2-px) var(--unit-0-px) var(--unit-2-px); /* to give some space around the circle */
   }
@@ -48,6 +48,14 @@
   @media screen and (min-width: 320px) and (max-width: 768px) {
     padding: var(--unit-0-px) var(--unit-10-px) var(--unit-0-px)
       var(--unit-10-px);
+
+    &__nav {
+      justify-content: var(--justify-content-center);
+    }
+
+    &__links {
+      display: var(--none);
+    }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
