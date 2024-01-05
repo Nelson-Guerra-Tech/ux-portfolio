@@ -1,5 +1,5 @@
 .card-color{
-  border-radius: var(--unit-20-px);
+  border-radius: var(--unit-8-px);
 }
 /* Background */
 .card-color-background-gold {
@@ -46,6 +46,9 @@
 }
 .card-color-background-sky-gradient {
   background: var(--sky-gradient);
+}
+.card-color-background-light-dark {
+  background: var(--light-dark);
 }
 
 /* Labels */

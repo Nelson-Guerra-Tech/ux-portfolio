@@ -20,4 +20,5 @@ export type Color =
   | "ocean"
   | "ut-orange"
   | "yellow"
+  | "light-dark"
   | "none";

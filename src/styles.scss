@@ -179,10 +179,12 @@
   --unit-400-px: 400px;
   --unit-450-px: 450px;
   --unit-475-px: 475px;
+  --unit-480-px: 480px;
   --unit-500-px: 500px;
   --unit-700-px: 700px;
 
   /* Single Digits */
+  --unit-1: 1;
   --unit-2: 2;
 
   /* Gap */
@@ -255,6 +257,7 @@
   --flex-direction-column: column;
   --flex-direction-row: row;
   --flex-wrap: wrap;
+  --flex-no-wrap: nowrap;
   --flex-grow-1: 1;
   --flex-shrink-1: 1;
   --flex-basis-1: 1;
