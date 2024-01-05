@@ -25,6 +25,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -41,6 +43,7 @@
     "@storybook/angular": "^7.5.1",
     "@storybook/blocks": "^7.5.1",
     "@storybook/testing-library": "^0.2.2",
+    "@types/aos": "^3.0.7",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
