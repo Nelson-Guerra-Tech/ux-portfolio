@@ -1,1 +1,33 @@
-<p>about works!</p>
+<div class="ux-portfolio-about-page" id="about">
+  <div
+    class="ux-porfolio-about-page__profile-picture"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <img
+      class="ux-portfolio-about-page__profile-picture--image"
+      [src]="content.image"
+      [alt]="content.alt"
+    />
+  </div>
+  <div
+    class="ux-portfolio-about-page__description"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2
+      class="ux-portfolio-about-page__description--title"
+      [innerHTML]="content.title"
+    ></h2>
+    <br />
+    <p
+      class="ux-portfolio-about-page__description--subtitle"
+      [innerHTML]="content.subtitle"
+    ></p>
+    <br />
+    <p
+      class="ux-portfolio-about-page__description--closure"
+      [innerHTML]="content.closure"
+    ></p>
+  </div>
+</div>

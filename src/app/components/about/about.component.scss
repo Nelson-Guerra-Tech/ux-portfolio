@@ -1,0 +1,89 @@
+.ux-portfolio-about-page {
+  display: var(--display-flex);
+  align-items: var(--align-items-center);
+  justify-content: var(--justify-content-space-between);
+  margin-bottom: var(--unit-200-px);
+  gap: var(--unit-10-px);
+
+  &__description {
+    user-select: var(--none);
+    max-width: var(--unit-500-px);
+    &--title {
+      font-size: var(--unit-25-px);
+      font-weight: var(--font-weight-600);
+    }
+    &--subtitle,
+    &--closure {
+      font-size: var(--unit-18-px);
+    }
+  }
+
+  &__profile-picture {
+    &--image {
+      width: var(--unit-480-px);
+      height: var(--unit-100-percent);
+    }
+  }
+}
+
+#about {
+  padding-top: var(
+    --unit-100-px
+  ); /* This padding prevents the content from being hidden behind any fixed header */
+  box-sizing: var(--border-sizing-border-box);
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .ux-portfolio-about-page {
+    flex-direction: var(--flex-direction-column);
+    margin-bottom: var(--unit-100-px);
+    width: var(--fit-content);
+    gap: var(--unit-50-px);
+    padding: var(--unit-0px) var(--unit-10-px);
+    &__description {
+      width: calc(100% - 20px);
+      &--title {
+        font-size: var(--unit-25-px);
+      }
+      &--subtitle,
+      &--closure {
+        font-size: var(--unit-18-px);
+      }
+    }
+    &__profile-picture {
+      &--image {
+        width: calc(100% - 20px);
+        margin-left: var(--unit-10-px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .ux-portfolio-about-page {
+    flex-direction: var(--flex-direction-column);
+    margin-bottom: var(--unit-150-px);
+    width: var(--fit-content);
+    gap: var(--unit-50-px);
+    padding: var(--unit-0px) var(--unit-10-px);
+    &__description {
+      width: calc(100% - 20px);
+      &--title {
+        font-size: var(--unit-35-px);
+      }
+      &--subtitle,
+      &--closure {
+        font-size: var(--unit-25-px);
+      }
+    }
+    &__profile-picture {
+      &--image {
+        width: calc(100% - 20px);
+        margin-left: var(--unit-10-px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}

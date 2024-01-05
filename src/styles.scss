@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Manrope:wght@200;300;400;500;600;800&display=swap");
 @import "./app//components//themes//base.styles.css";
+@import "~aos/dist/aos.css";
 
 :root {
   /* Font Families */
@@ -9,8 +10,9 @@
   --manrope-apple-font: "Manrope", sans-serif;
 
   /* Colors */
+  --light-dark: #636363;
   --dark: #212529;
-  --darker: 151515;
+  --darker: #151515;
   --night: #0b0b0b;
   --day: #f6f6f6;
   --danger: #ff220c;
@@ -155,6 +157,10 @@
   --unit-32-px: 32px;
   --unit-35-px: 35px;
   --unit-40-px: 40px;
+  --unit-41-px: 41px;
+  --unit-42-px: 42px;
+  --unit-43-px: 43px;
+  --unit-44-px: 44px;
   --unit-45-px: 45px;
   --unit-50-px: 50px;
   --unit-55-px: 55px;
@@ -162,13 +168,18 @@
   --unit-65-px: 65px;
   --unit-70-px: 70px;
   --unit-100-px: 100px;
+  --unit-150-px: 150px;
   --unit-200-px: 200px;
+  --unit-250-px: 250px;
   --unit-275-px: 275px;
   --unit-300-px: 300px;
   --unit-350-px: 350px;
   --unit-360-px: 360px;
   --unit-375-px: 375px;
+  --unit-400-px: 400px;
+  --unit-450-px: 450px;
   --unit-475-px: 475px;
+  --unit-500-px: 500px;
   --unit-700-px: 700px;
 
   /* Single Digits */
@@ -324,6 +335,13 @@
 
   /* Percentage */
   --unit-93-percent: 93%;
+  --unit-94-percent: 94%;
+  --unit-95-percent: 95%;
+  --unit-96-percent: 96%;
+  --unit-97-percent: 97%;
+  --unit-98-percent: 98%;
+  --unit-99-percent: 99%;
+  --unit-100-percent: 100%;
 
   /* Border Style */
   --border-style-none: none;
@@ -353,15 +371,14 @@
 }
 
 html {
-  font-family: var(--poppins-font);
   margin: var(--margin-0-px) var(--margin-auto);
   max-width: var(--width-1080-px);
+  scroll-behavior: var(--scroll-behavior-smooth);
 }
 
 body {
   background-color: var(--white);
   color: var(--charcoal);
-  scroll-behavior: var(--scroll-behavior-smooth);
   padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
     var(--padding-0-px);
 }
