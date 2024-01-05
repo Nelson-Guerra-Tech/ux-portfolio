@@ -2,8 +2,7 @@
   display: var(--display-flex);
   flex-direction: var(--flex-direction-column);
   justify-content: var(--justify-content-end);
-  height: var(--unit-375-px);
-  margin-bottom: var(--unit-30-px);
+  margin: 150px 0px 80px 0px;
   user-select: var(--text-decoration-none);
   cursor: var(--cursor-default);
 
@@ -12,7 +11,34 @@
     flex-direction: var(--flex-direction-row);
     align-items: var(--align-items-end);
     width: var(--width-100-percent);
-    margin-bottom: var(--unit-40-px);
+    margin-bottom: var(--unit-60-px);
+  }
+
+  &__call-to-action {
+    width: var(--fit-content);
+    padding: var(--unit-15-px) var(--unit-35-px);
+    border-radius: var(--unit-100-px);
+    border-style: var(--none);
+    background: var(--darker);
+    color: var(--white);
+    font-size: var(--unit-18-px);
+    text-decoration: var(--none);
+  }
+
+  .fade-in-up {
+    opacity: var(--unit-0);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: var(--unit-0);
+      transform: translateY(20px);
+    }
+    to {
+      opacity: var(--unit-1-px);
+      transform: translateY(0);
+    }
   }
 
   &__title-wrapper {
@@ -28,18 +54,19 @@
     line-height: var(--unit-93-percent);
   }
 
-  &__period {
-    width: var(--unit-10-px);
-    height: var(--unit-10-px);
-    background-color: var(--ocean);
-    border-radius: var(--border-radius-50-percent);
-    margin-bottom: var(--unit-5-px);
-    margin-left: var(--unit-3-px);
+  &__subtitle-highlight {
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--text-fill-transparent);
   }
 
   &__descriptor-title {
     font-size: var(--unit-20-px);
     font-weight: var(--font-weight-400);
+    max-width: var(--unit-700-px);
+    margin-bottom: var(--unit-50-px);
   }
 
   &__descriptor-wrapper {
@@ -51,19 +78,19 @@
     font-size: var(--unit-20-px);
   }
 
-  &__descriptor-label {
-    font-weight: var(--font-weight-500);
+  .highlight {
+    font-weight: var(--font-weight-600);
     margin-left: var(--unit-5-px);
-    color: var(--highlight);
+    color: var(--darker);
     text-decoration: var(--text-decoration-underline);
     font-size: var(--unit-20-px);
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 420px) {
   .ux-portfolio-landing-page {
-    padding: var(--padding-20-px) var(--padding-10-px);
-    margin-bottom: var(--unit-10-px);
+    padding: var(--padding-0-px) var(--padding-10-px);
+    margin-top: var(--unit-400-px);
     height: var(--unit-275-px);
     &__subtitle-wrapper {
       display: var(--display-flex);
@@ -75,18 +102,15 @@
     &__subtitle {
       font-family: var(--poppins-font);
       font-weight: var(--font-weight-500);
-      font-size: var(--unit-40-px);
-      line-height: var(--unit-93-percent);
+      font-size: var(--unit-50-px);
+      line-height: var(--unit-55-px);
     }
     &__period {
-      width: var(--unit-5-px);
-      height: var(--unit-5-px);
-      background-color: var(--orange-text);
-      border-radius: var(--border-radius-50-percent);
-      margin-bottom: var(--unit-4-px);
+      display: var(--none);
     }
     &__descriptor-title {
-      font-size: var(--unit-18-px);
+      padding-top: var(--unit-20-px);
+      font-size: var(--unit-20-px);
       height: var(--unit-275-px);
     }
     &__descriptor-label,
@@ -96,9 +120,40 @@
   }
 }
 
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .ux-portfolio-landing-page {
+    padding: var(--padding-0-px) var(--padding-10-px);
+    margin-top: var(--unit-250-px);
+    height: var(--unit-275-px);
+    &__subtitle-wrapper {
+      display: var(--display-flex);
+      flex-direction: var(--flex-direction-row);
+      align-items: var(--align-items-end);
+      margin-bottom: var(--unit-50-px);
+    }
+    &__title,
+    &__subtitle {
+      font-family: var(--poppins-font);
+      font-weight: var(--font-weight-500);
+      font-size: var(--unit-55-px);
+      line-height: var(--unit-55-px);
+    }
+    &__period {
+      display: var(--none);
+    }
+    &__descriptor-title {
+      font-size: var(--unit-20-px);
+    }
+    &__descriptor-label,
+    &__descriptor {
+    }
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ux-portfolio-landing-page {
     padding: var(--padding-20-px) var(--padding-10-px);
+    height: var(--unit-500-px);
     &__subtitle-wrapper {
       display: var(--display-flex);
       flex-direction: var(--flex-direction-row);

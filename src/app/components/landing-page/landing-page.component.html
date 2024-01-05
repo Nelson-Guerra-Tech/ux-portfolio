@@ -1,34 +1,44 @@
 <div class="ux-portfolio-landing-page">
-  <div class="ux-portfolio-landing-page__title-wrapper">
+  <div
+    class="ux-portfolio-landing-page__title-wrapper"
+    data-aos="fade-up"
+    data-aos-duration="500"
+  >
     <div
       class="ux-portfolio-landing-page__title"
       [innerHTML]="content.label.title"
     ></div>
-    <div class="ux-portfolio-landing-page__period"></div>
   </div>
 
   <div
-    *ngIf="content.label.subtitle"
     class="ux-portfolio-landing-page__subtitle-wrapper"
+    data-aos="fade-up"
+    data-aos-duration="500"
   >
-    <div
-      class="ux-portfolio-landing-page__subtitle"
-      [innerHTML]="content.label.subtitle"
-    ></div>
+    <div class="ux-portfolio-landing-page__subtitle">
+      <span class="ux-portfolio-landing-page__subtitle-highlight"
+        >Designer</span
+      >
+      & Developer
+    </div>
   </div>
 
   <div
     class="ux-portfolio-landing-page__descriptor-title"
-    [innerHTML]="content.descriptor.title"
-  ></div>
-  <div class="ux-portfolio-landing-page__descriptor-wrapper">
-    <div
-      class="ux-portfolio-landing-page__descriptor"
-      [innerHTML]="content.descriptor.subtitle"
-    ></div>
-    <div
-      class="ux-portfolio-landing-page__descriptor-label"
-      [innerHTML]="content.descriptor.label"
-    ></div>
+    data-aos="fade-up"
+    data-aos-duration="900"
+  >
+    As a Software Engineer at <span class="highlight">Delta Air Lines</span>, I
+    excel in developing user-centric, visually appealing web applications.
+    Bridging the gap between design and development, aiming to deliver
+    innovative and effective solutions.
   </div>
+
+  <a
+    href="#"
+    class="ux-portfolio-landing-page__call-to-action"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    >Résumé</a
+  >
 </div>
