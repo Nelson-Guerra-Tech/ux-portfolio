@@ -17,9 +17,81 @@
   &__link {
     font-weight: var(--font-weight-600);
     font-size: var(--unit-45-px);
-
     a {
-      color: var(--mint);
+      background: -webkit-linear-gradient(
+        to right,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+      -webkit-background-clip: text; /* Clip background to the text (WebKit browsers) */
+      background-clip: text; /* Clip background to the text (standard) */
+      color: transparent; /* Make the text color transparent */
     }
   }
+
+  &__link:hover {
+    a {
+      background: -webkit-linear-gradient(
+        to right,
+        #3494e6,
+        #ec6ead
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #3494e6, #ec6ead);
+      -webkit-background-clip: var(
+        --bg-clip-text
+      ); /* Clip background to the text (WebKit browsers) */
+      background-clip: var(
+        --bg-clip-text
+      ); /* Clip background to the text (standard) */
+      color: var(--text-fill-transparent); /* Make the text color transparent */
+    }
+  }
+
+  &__icon {
+    background: -webkit-linear-gradient(
+      to right,
+      #12c2e9,
+      #c471ed,
+      #f64f59
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: var(
+      --bg-clip-text
+    ); /* Clip background to the text (WebKit browsers) */
+    background-clip: var(
+      --bg-clip-text
+    ); /* Clip background to the text (standard) */
+    color: #f64f59;
+    margin-left: var(--unit-10-px);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .ux-portfolio-contact {
+    padding: var(--unit-0-px) var(--unit-10-px);
+    margin-bottom: var(--unit-100-px);
+    &__description {
+      font-size: var(--unit-35-px);
+      line-height: var(--unit-40-px);
+    }
+
+    &__link {
+      font-size: var(--unit-35-px);
+    }
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .ux-portfolio-contact {
+    padding: var(--unit-0-px) var(--unit-10-px);
+    margin-bottom: var(--unit-100-px);
+    &__description {
+      line-height: var(--unit-40-px);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 }

@@ -1,11 +1,19 @@
 <div class="ux-portfolio-contact">
-  <div class="ux-portfolio-contact__main-wrapper">
+  <div
+    class="ux-portfolio-contact__main-wrapper"
+    data-aos="fade-up"
+    data-aos-duration="1500"
+  >
     <div
       [innerHTML]="contact.description"
       class="ux-portfolio-contact__description"
     ></div>
     <div class="ux-portfolio-contact__link">
-      <a href="#" [innerHTML]="contact.link.url"></a>
+      <a
+        href="mailto:nelsonguerra.tech@outlook.com?subject=Subject Line&body=Hello, I am writing to..."
+        [innerHTML]="contact.link.url"
+      >
+      </a>
     </div>
   </div>
 </div>
