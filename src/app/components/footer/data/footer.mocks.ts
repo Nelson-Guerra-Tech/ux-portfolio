@@ -5,7 +5,7 @@ export const FooterDate: Footer = {
     title: "",
     subtitle: "",
   },
-  rights: "Angular | Nelson Guerra © 2023 | All rights reserved",
+  rights: "Nelson Guerra © 2024 | All rights reserved",
   links: {
     about: "About",
     blog: "Blog",

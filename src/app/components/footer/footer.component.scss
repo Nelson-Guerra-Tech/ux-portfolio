@@ -33,7 +33,7 @@
   &__social-icons {
     display: var(--display-flex);
     gap: var(--unit-20-px);
-    font-size: var(--unit-25-px);
+    font-size: var(--unit-30-px);
 
     a:-webkit-any-link {
       color: var(--charcoal);
@@ -45,4 +45,57 @@
     user-select: var(--text-decoration-none);
     color: var(--faded-text);
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .ux-portfolio-footer {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    padding: var(--unit-100-px) var(--unit-10-px);
+    gap: var(--unit-40-px);
+    &__brand-wrapper {
+      font-size: var(--unit-20-px);
+    }
+    &__links {
+      gap: var(--unit-10-px);
+    }
+    &__label {
+      font-size: var(--unit-15-px);
+    }
+    &__social-icons {
+      gap: var(--unit-30-px);
+    }
+    &__rights {
+      font-size: var(--unit-15-px);
+    }
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .ux-portfolio-about-page {
+    flex-direction: var(--flex-direction-column);
+    margin-bottom: var(--unit-150-px);
+    width: var(--fit-content);
+    gap: var(--unit-50-px);
+    padding: var(--unit-0px) var(--unit-10-px);
+    &__description {
+      width: calc(100% - 20px);
+      &--title {
+        font-size: var(--unit-25-px);
+      }
+      &--subtitle,
+      &--closure {
+        font-size: var(--unit-18-px);
+      }
+    }
+    &__profile-picture {
+      &--image {
+        width: calc(100% - 20px);
+        margin-left: var(--unit-10-px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 }
