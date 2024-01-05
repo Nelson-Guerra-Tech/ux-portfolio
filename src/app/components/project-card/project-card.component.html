@@ -5,7 +5,11 @@
     cardColor
     [cardColorBackground]="card.color"
     [cardColorLabel]="card.label"
+    data-aos="fade-up"
+    data-aos-duration="900"
   >
+    <img *ngIf="card.image" [src]="card.image.src" alt="card.image.alt" />
+    <div class="project-card__overlay"></div>
     <span
       class="project-card__subtitle"
       [innerHTML]="card.header.subtitle"

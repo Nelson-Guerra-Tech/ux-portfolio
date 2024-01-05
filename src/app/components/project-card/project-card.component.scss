@@ -7,30 +7,56 @@
   scrollbar-width: var(--none);
   padding: var(--padding-50-px) var(--padding-0-px) var(--padding-20-px)
     var(--padding-0-px);
-  overflow-x: var(--overflow-scroll);
+  // overflow-x: var(--overflow-scroll);
+  overflow-x: var(--margin-auto);
   overflow: var(--overflow-visible);
-  margin-bottom: var(--unit-100-px);
+  margin-top: var(--unit-50-px);
+  margin-bottom: var(--unit-50-px);
   font-family: var(--manrope-apple-font);
+  gap: var(--unit-10-px);
 
   &__box {
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     min-width: var(--unit-350-px);
     height: var(--unit-350-px);
-    padding: var(--unit-35-px) var(--unit-35-px);
     box-shadow: var(--box-shadow);
-    transition: var(--transition-all);
+    // transition: var(--transition-all);
     cursor: var(--cursor-pointer);
     overflow: var(--overflow-hidden);
+    position: var(--position-relative);
+
+    img {
+      position: var(--position-absolute);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: var(--object-fit-cover);
+    }
   }
 
   &__box:hover {
-    box-shadow: var(--box-shadow-medium);
     transform: translateY(-8px);
-    background-color: var(--darker);
+  }
+
+  &__overlay {
+    position: var(--position-absolute);
+    top: var(--unit-0);
+    left: var(--unit-0);
+    right: var(--unit-0);
+    bottom: var(--unit-0);
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    transition: opacity 0.5s ease; /* Smooth transition for the overlay */
+    opacity: var(--unit-1); /* Overlay visible initially */
+  }
+
+  &__box:hover &__overlay {
+    opacity: var(--unit-0);
   }
 
   &__title {
+    padding: var(--unit-0-px) var(--unit-35-px);
     z-index: var(--unit-2);
     font-size: var(--unit-25-px);
     font-weight: var(--font-weight-500);
@@ -38,6 +64,8 @@
   }
 
   &__subtitle {
+    padding: var(--unit-35-px) var(--unit-35-px) var(--unit-10-px)
+      var(--unit-35-px);
     z-index: var(--unit-2);
     opacity: var(--opacity-0-8);
     text-transform: var(--text-transformation-uppercase);
@@ -51,9 +79,11 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .project-card {
-    overflow-x: var(--overflow-scroll);
+    overflow-x: var(--margin-auto);
+    white-space: var(--flex-no-wrap);
     padding: var(--padding-20-px) var(--padding-10-px);
     gap: var(--unit-10-px);
+    margin-bottom: var(--unit-0-px);
     &__box {
       min-width: var(--unit-275-px);
       height: var(--unit-200-px);

@@ -6,15 +6,19 @@ export const ProjectCardsMocks: Cards[] = [
       title: "The Nue Co",
       subtitle: "Web Design",
     },
-    color: "ocean",
+    color: "light-dark",
     label: "white",
+    image: {
+      src: "assets/images/electronics.jpeg",
+      alt: "The Nue Co",
+    },
   },
   {
     header: {
       title: "Americana",
       subtitle: "Mobile Design",
     },
-    color: "ocean",
+    color: "light-dark",
     label: "white",
   },
   {
@@ -22,7 +26,7 @@ export const ProjectCardsMocks: Cards[] = [
       title: "Petal",
       subtitle: "app design",
     },
-    color: "ocean",
+    color: "light-dark",
     label: "white",
   },
 ];
